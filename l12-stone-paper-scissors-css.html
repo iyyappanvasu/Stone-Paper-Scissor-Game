@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Stone Paper Scissors
+  </title>
+  <link rel="stylesheet" href="l10-stone-paper-scissor.css">
+  <link rel="icon" href="stone-paper-scissor-images/icon-removebg-preview.png">
+</head>
+
+<body>
+  <p class="title-heading">
+    Stone Paper Scissor
+  </p>
+  <button class="stone-img-button js-stone-button">
+    <img class="stone-img" src="stone-paper-scissor-images/stone-emoji.png">
+  </button>
+  <button class="paper-img-button js-paper-button">
+    <img class="paper-img" src="stone-paper-scissor-images/paper-emoji.png">
+  </button>
+  <button class="scissor-img-button js-scissor-button">
+    <img class="scissor-img" src="stone-paper-scissor-images/scissor-emoji.png">
+  </button>
+  <p class="js-result"></p>
+  <p class="js-moves"></p>
+  <p class="js-score"></p>
+  <button onclick="
+  score.wins=0;
+  score.losses=0;
+  score.ties=0;
+  localStorage.removeItem('score');
+  updateScore();
+ 
+  " class="reset-button">
+    Reset Score
+  </button>
+  <button class="auto-play-button" onclick="
+  autoplay();"> Auto Play</button>
+  <script src=" l10-stone-paper-scissor.js">
+
+  </script>
+
+</body>
+
+</html>
